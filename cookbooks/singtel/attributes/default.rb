@@ -6,7 +6,7 @@ default[:singtel][:test] = false
 default[:singtel][:standalone] = false
 
 default[:singtel][:hostname] = 'singtelstaging.com'
-default[:singtel][:base_path] = '/opt/singtel/tomcat'
+default[:singtel][:base_path] = '/opt/singtel/'
 default[:singtel][:deploy_path] = '/opt/singtel/tomcat/webapps'
 default[:singtel][:deploy][:shallow_clone] = true
 default[:singtel][:deploy][:keep_releases] = 5
