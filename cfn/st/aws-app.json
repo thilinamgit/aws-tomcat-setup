@@ -124,7 +124,6 @@
     }
   },
 
-
   "Resources": {
 
     "AppOpsWorksStack": {
@@ -220,7 +219,7 @@
         ],
         "CustomJson": {
           "alb_helper": {
-            "target_group_arn": { "Ref": "AppTgtGrp80" },
+            "target_group_arn": { "Ref": "AppTgtGrp" },
             "connection_draining_timeout": 300,
             "state_check_frequency": 30
           }
@@ -554,7 +553,7 @@
         "DefaultActions": [
           {
             "Type": "forward",
-            "TargetGroupArn": { "Ref": "AppTgtGrp8080" }
+            "TargetGroupArn": { "Ref": "AppTgtGrp" }
           }
         ],
         "LoadBalancerArn": { "Ref": "AppServerALB" },
@@ -590,7 +589,7 @@
       "Properties" : {
         "Actions" : [
           {
-            "TargetGroupArn" : {"Ref": "AppTgtGrp80"},
+            "TargetGroupArn" : {"Ref": "AppTgtGrp"},
             "Type" : "forward"
           }
         ],
@@ -610,7 +609,7 @@
       "Properties" : {
         "Actions" : [
           {
-            "TargetGroupArn" : {"Ref": "AppTgtGrp80"},
+            "TargetGroupArn" : {"Ref": "AppTgtGrp"},
             "Type" : "forward"
           }
         ],

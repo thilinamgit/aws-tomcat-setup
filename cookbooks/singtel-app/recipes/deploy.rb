@@ -9,7 +9,7 @@ group = node[:singtel][:group]
 
 app = search(:aws_opsworks_app).first
 deploy_path = node[:singtel][:deploy_path]
-application_path = node[:singtel][:deploy_path] + 'current/' + node[:singtel][:application_dir]
+application_path = node[:singtel][:deploy_path]
 purge_dirs = node[:singtel][:purge_dirs]
 puts "*******Application path: #{application_path}:app-deploy *******"
 
